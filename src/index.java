@@ -33,7 +33,7 @@ public class index extends HttpServlet {
  String message = request.getParameter("message");
         out.println("<HTML><HEAD><TITLE>login</TITLE></HEAD>");
         out.println("<BODY><H1>Logged in </H1> <H1 ALIGN=\"CENTER\">Login Form</H1><FORM ACTION=\"/Flabflix/servlet/Login\" METHOD=\"GET\"><center> Username: <INPUT TYPE=\"TEXT\" NAME=\"Username\"><BR> Password: <INPUT TYPE=\"PASSWORD\" NAME=\"password\"><BR></center> <CENTER><INPUT TYPE=\"SUBMIT\" VALUE=\"Submit Order\">");
-        		if(message !=null)out.println("<br>"+message+"</br>");
+        		if(message !=null)out.println("<br> asdas"+message+"</br>");
         out.println("</CENTER>");
         				out.println("</FORM>");
 

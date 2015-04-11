@@ -31,7 +31,7 @@ public class Login extends HttpServlet {
         throws IOException, ServletException
     {
         String loginUser = "root";
-        String loginPasswd = "decodder";
+        String loginPasswd = "muk5086";
         String loginUrl = "jdbc:mysql://localhost:3306/moviedb";
 
         response.setContentType("text/html");    // Response mime type

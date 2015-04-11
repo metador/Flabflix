@@ -56,10 +56,8 @@ public class Login extends HttpServlet {
               String query = "SELECT * from customers where first_name='"+username+"' AND password='"+ password+"';";
 
               // Perform the query
-             
               ResultSet rs = statement.executeQuery(query);
               out.println("<TABLE border>");
-
               // Iterate through each row of rs
              if (rs.next())
               {
@@ -70,11 +68,9 @@ public class Login extends HttpServlet {
                               
                               "</tr>");
               }else{
-            	  String message="Username or password incorrect";
+            	  String message="Username or asdas password incorrect redirected back from login";
             	  response.sendRedirect("/Flabflix/?message="+message);
-            	
-              }
-
+            	  }
               out.println("</TABLE>");
 
               rs.close();
@@ -100,10 +96,10 @@ public class Login extends HttpServlet {
             }
          out.close();
     }
+    
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException
         {
-    	
     	doGet(request, response);
         }
 }
